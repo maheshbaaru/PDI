@@ -1,0 +1,16 @@
+.example-image-container {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 250px;
+    .example-image {
+      font-size: 4rem;
+      width: 55px;
+      height: 55px;
+      color: $pdi-dark-gray;
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: center;
+    }
+  }

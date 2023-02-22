@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { DropdownModel } from '@pdi/platform-angular-template/src/lib/pdi-dropdown/model/dropdown.model';
 
 @Component({
   selector: 'app-home',
@@ -6,5 +7,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent {
+
+  clicked(){
+    
+  }
+   
 
 }

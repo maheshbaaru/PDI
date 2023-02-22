@@ -5,20 +5,47 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { LoginComponent } from './login/login.component';
 import { PdiModule } from './modules/pdi/pdi.module';
-import { PdiButtonsModule } from '@pdi/platform-angular-template';
+import { PdiAccordionModule, PdiBadgeModule, PdiButtonsModule, PdiFilterChipModule } from '@pdi/platform-angular-template';
+import { PdiCheckboxModule } from '@pdi/platform-angular-template';
+import { PdiCardsModule } from '@pdi/platform-angular-template';
+import { AdminComponent } from './admin/admin.component';
+import { PdiComboBoxModule } from '@pdi/platform-angular-template';
+import { PdiBreadcrumbModule } from '@pdi/platform-angular-template';
+
+import { PdiInputModule } from '@pdi/platform-angular-template';
+import { PdiFooterModule } from '@pdi/platform-angular-template';
+import { PdiDatePickerModule } from '@pdi/platform-angular-template';
+
+import { PdiLinkModule } from '@pdi/platform-angular-template';
+
+
+
+
 
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    LoginComponent
+    LoginComponent,
+    AdminComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     PdiModule,
     PdiButtonsModule,
+    PdiCardsModule,
+    PdiCheckboxModule,
+    PdiBadgeModule,
+    PdiAccordionModule,
+    PdiBreadcrumbModule,
+    PdiComboBoxModule,
+    PdiFilterChipModule,
+    PdiDatePickerModule,
+    PdiFooterModule,
+    PdiInputModule,
+    PdiLinkModule
     
    
   ],

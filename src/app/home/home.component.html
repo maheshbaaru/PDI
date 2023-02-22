@@ -1,1 +1,74 @@
 <pdi-button>PDI Button Primary</pdi-button>
+
+
+
+   <!-- template -->
+   <pdi-card eyebrowText="Drop Site"
+   (ctaButtonInteractions)="clicked()"
+   [ctaButtonsConfiguration]="[{ id: 'sign', label: 'Sign', iconClass: 'pdi-icon-Sign-Document' }]"
+   header="0103-Fast Break #103">
+<div class="info-contents">
+<div class="row">
+<p>
+ 7712 E.Riverside<br> Dr. San Antonio,<br> TX T-74 111-222-3333
+</p>
+</div>
+<div class="row separator"></div>
+<div class="row dates">
+<div class="dat">
+ <label>Dropped:</label>
+ <p>01/06/2020 10:00 CST</p>
+</div>
+<div class="dat">
+ <label>Earliest:</label>
+ <p>01/06/2020 10:00 CST</p>
+</div>
+<div class="dat">
+ <label>Scheduled:</label>
+ <p>01/06/2020 10:00 CST</p>
+</div>
+<div class="dat">
+ <label>Latest:</label>
+ <p>01/06/2020 10:00 CST</p>
+</div>
+</div>
+<div class="row summary">
+<div class="sum-pair">
+ <p>Dispatched</p>
+ <label>1200</label>
+</div>
+<div class="sum-pair">
+ <p>Gross</p>
+ <label>1000</label>
+</div>
+<div class="sum-pair">
+ <p>Net</p>
+ <label>1000</label>
+</div>
+</div>
+</div>
+</pdi-card>
+
+<pdi-button [isDestructive]]="true">PDI Button Destructive</pdi-button>
+
+
+ <br>
+<pdi-button>PDI Button Primary</pdi-button>
+<pdi-button [text]="'PDI Button Secondary'" [isSecondary]="true"></pdi-button>
+<pdi-button [isDisabled]="true">PDI Button Disabled</pdi-button>
+<pdi-button [isDestructive]]="true">PDI Button Destructive</pdi-button>
+
+<br>
+
+<pdi-checkbox [checked]="true">State Selected</pdi-checkbox>
+<pdi-checkbox>State Unselected</pdi-checkbox>
+<pdi-checkbox [checked]="true" [isDisabled]="true">State Selected Inactive</pdi-checkbox>
+<pdi-checkbox [isDisabled]="true">State Unselected Inactive</pdi-checkbox>
+
+<br>
+
+ 
+<pdi-badge [badgeStatus]="'notification'">5</pdi-badge>
+<pdi-badge [badgeStatus]="'notification'">109</pdi-badge>
+<i class="pdi-icon-Notification" badgeStatus="notification" [badgeValue]="30" pdiBadge></i>
+<i pdiBadge badgeStatus="point" position="right" class="pdi-icon-Profile"></i>
